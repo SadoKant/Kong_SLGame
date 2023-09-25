@@ -425,7 +425,9 @@ void SLDrawManager::DrawDialogueWindow()
 			}
 		}
 		SetColor(TextColor::White, TextColor::Black);
-		std::cout << "\n";
+		if (mapY < maxY - 1) {
+			std::cout << "\n";
+		}
 	}
 
 	SetColor(TextColor::White, TextColor::Black);
